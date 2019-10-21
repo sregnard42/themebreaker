@@ -1,0 +1,139 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/layout_game_engine"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context="${relativePackage}.${activityClass}" >
+
+    <LinearLayout
+        android:id="@+id/layout_top"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:weightSum="2" >
+
+        <RelativeLayout
+            android:id="@+id/layout_settings"
+            android:layout_width="wrap_content"
+            android:layout_height="0dp"
+            android:layout_weight="1" >
+
+            <LinearLayout
+                android:id="@+id/layout_options"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:gravity="end"
+                android:orientation="horizontal" >
+
+                <ImageButton
+                    android:id="@+id/btnOptions"
+                    android:layout_width="wrap_content"
+                    android:layout_height="match_parent"
+                    android:background="@drawable/shape_rounded"
+                    android:contentDescription="@+string/btn_options"
+                    android:src="@android:drawable/ic_menu_preferences" />
+
+                <ImageButton
+                    android:id="@+id/btnMusique"
+                    android:layout_width="wrap_content"
+                    android:layout_height="match_parent"
+                    android:background="@drawable/shape_rounded"
+                    android:contentDescription="@+string/btn_sound"
+                    android:src="@android:drawable/ic_lock_silent_mode_off"
+                    android:visibility="invisible" />
+
+                <Button
+                    android:id="@+id/btnSFX"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:background="@drawable/shape_rounded"
+                    android:contentDescription="@+string/btn_sfx"
+                    android:text="@+string/btn_sfx"
+                    android:visibility="invisible" />
+
+                <ImageButton
+                    android:id="@+id/btnQuitter"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:background="@drawable/shape_rounded"
+                    android:contentDescription="@+string/btn_quitter"
+                    android:src="@android:drawable/ic_menu_close_clear_cancel"
+                    android:visibility="invisible" />
+            </LinearLayout>
+
+            <RelativeLayout
+                android:id="@+id/layout_game_state"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentEnd="true" >
+
+                <ImageButton
+                    android:id="@+id/btnPause"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:background="@drawable/shape_rounded"
+                    android:contentDescription="@+string/btn_pause"
+                    android:src="@android:drawable/ic_media_pause"
+                    android:visibility="invisible" />
+
+                <ImageButton
+                    android:id="@+id/btnPlay"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:background="@drawable/shape_rounded"
+                    android:contentDescription="@+string/btn_play"
+                    android:src="@android:drawable/ic_media_play" />
+            </RelativeLayout>
+        </RelativeLayout>
+
+        <LinearLayout
+            android:id="@+id/layout_game_info"
+            android:layout_width="match_parent"
+            android:layout_height="0dp"
+            android:layout_weight="1"
+            android:gravity="center"
+            android:orientation="horizontal" >
+
+            <ImageView
+                android:id="@+id/imgLife"
+                android:layout_width="wrap_content"
+                android:layout_height="match_parent"
+                android:adjustViewBounds="true"
+                android:contentDescription="@+id/imgLife"
+                android:scaleType="fitEnd"
+                android:src="@drawable/ic_heart" />
+
+            <TextView
+                android:id="@+id/txtLife"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="@string/default_number"
+                android:textAppearance="?android:attr/textAppearanceLarge"
+                android:textColor="#FFFFFF" />
+
+            <ImageView
+                android:id="@+id/imgScore2"
+                android:layout_width="wrap_content"
+                android:layout_height="match_parent"
+                android:contentDescription="@+id/imgScore"
+                android:scaleType="fitEnd"
+                android:src="@drawable/ic_podium" />
+
+            <TextView
+                android:id="@+id/txtScore"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="@string/default_number"
+                android:textAppearance="?android:attr/textAppearanceLarge"
+                android:textColor="#FFFFFF" />
+        </LinearLayout>
+    </LinearLayout>
+
+    <RelativeLayout
+        android:id="@+id/layout_game"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_below="@+id/layout_top" >
+    </RelativeLayout>
+
+</RelativeLayout>

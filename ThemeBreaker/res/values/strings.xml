@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+    <string name="app_name">Theme Breaker</string>
+    <string name="title_activity_menu_jouer">MenuJouer</string>
+    <string name="title_activity_menu_options">MenuOptions</string>
+    <string name="title_activity_menu_jouer_parametres">MenuJouerParametres</string>
+    <string name="title_activity_game_engine">GameEngine</string>
+    <string name="btn_pause">Pause</string>
+    <string name="btn_play">Play</string>
+    <string name="btn_options">Options</string>
+    <string name="btn_quitter">Quitter</string>
+    <string name="btn_sound">Son</string>
+    <string name="btn_sfx">SFX</string>
+    <string name="title_activity_brick_breaker">BrickBreaker</string>
+    <string name="default_number">0</string>
+    <string name="img_life">Life</string>
+    <string name="default_string">default</string>
+    <string name="img_score">Score</string>
+
+</resources>
